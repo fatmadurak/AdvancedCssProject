@@ -20,3 +20,92 @@ body{
     line-height: 1.5;
 
 }
+
+.header{
+
+
+    height: 8rem;
+    background-color: aqua;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+.header__logo{
+
+
+
+}
+
+.navigation{
+
+    width: 75%;
+
+    display: flex;
+ 
+
+
+}
+
+.navigation__nav{
+
+flex:0 0 80%;
+
+
+
+}
+.navigation__list{
+
+
+    list-style: none;
+   
+
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+
+.navigation__item{
+
+
+
+}
+
+.navigation__link,
+.navigation__link:link,
+.navigation__link:visited{
+
+font-size: .8rem;
+color:rgba(black, .7);
+text-decoration: none;
+text-transform: uppercase;
+font-weight: 700;
+
+
+}
+
+
+.social-nav{
+
+
+}
+
+.social-nav__list{
+
+
+}
+
+.social-nav__item{
+
+
+}
+
+.social-nav__link{
+
+
+    
+}
