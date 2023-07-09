@@ -1,0 +1,27 @@
+{
+  "name": "mercansoftwebsite",
+  "version": "1.0.0",
+  "description": "mercansoftweb",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fatmadurak/mercansoftWebSite.git"
+  },
+  "keywords": [
+    "yazılım",
+    "software",
+    "website"
+  ],
+  "author": "fatma Durak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fatmadurak/mercansoftWebSite/issues"
+  },
+  "homepage": "https://github.com/fatmadurak/mercansoftWebSite#readme",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
