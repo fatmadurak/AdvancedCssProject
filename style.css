@@ -55,22 +55,40 @@ body {
   .navigation__nav {
     flex: 0 0 80%; }
   .navigation__list {
+    flex: 0 0 80%;
     list-style: none;
     display: flex;
     justify-content: space-between; }
-  .navigation__link, .navigation __link:link, .navigation __link:visited {
-    font-size: .8rem;
-    color: rgba(0, 0, 0, 0.5);
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 800; }
+  .navigation__link {
+    position: relative; }
+    .navigation__link::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -3px;
+      width: 0;
+      height: 3px;
+      background-color: #3dbe71;
+      transition: all .3s ease-in; }
+    .navigation__link:link, .navigation__link:visited {
+      font-size: .8rem;
+      color: rgba(0, 0, 0, 0.5);
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: 800; }
+    .navigation__link:hover::after, .navigation__link:active::after {
+      width: 100%; }
 
 .social-nav__list {
   list-style: none;
   display: flex; }
 
-.social-nav__link {
-  padding: .5rem; }
+.social-nav__link, .social-nav__link:link, .social-nav__link:visited {
+  padding: .5rem;
+  text-decoration: none; }
+
+.social-nav__link:hover svg, .social-nav__link:active svg {
+  fill: #17015d; }
 
 .social-nav__icon {
   width: 1rem;

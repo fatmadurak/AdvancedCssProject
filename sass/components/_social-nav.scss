@@ -24,7 +24,29 @@
     &__link{
       
       
-      padding: .5rem;
+   
+
+      &,
+      &:link,
+      &:visited{
+
+        padding: .5rem;
+        text-decoration: none;
+         
+
+      }
+
+
+      &:hover,
+      &:active{
+
+       svg{
+      
+        fill:#17015d;
+
+       }
+
+      }
     
     }
 
