@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -14,7 +15,37 @@ body {
   line-height: 1.5; }
 
 .button {
-  background-color: #00ff88; }
+  padding: 1.25rem 3rem;
+  text-transform: uppercase;
+  border-radius: 5rem;
+  background-color: #3dbe71;
+  color: #fff;
+  border: none;
+  font-size: .7rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+  position: relative;
+  outline: none;
+  /*tıklanınca izgi olmasın*/ }
+  .button span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: all .2s ease-in;
+    /* ease in yavaş başla hızlan*/ }
+    .button span:last-child {
+      transform: translate(-50%, 0%);
+      top: 100%;
+      opacity: 0; }
+  .button:hover, .button:active {
+    background-color: #5db380; }
+    .button:hover span, .button:active span {
+      opacity: 0; }
+      .button:hover span:last-child, .button:active span:last-child {
+        top: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 1; }
 
 .navigation {
   width: 75%;
@@ -29,17 +60,22 @@ body {
     justify-content: space-between; }
   .navigation__link, .navigation __link:link, .navigation __link:visited {
     font-size: .8rem;
-    color: rgba(0, 0, 0, 0.7);
+    color: rgba(0, 0, 0, 0.5);
     text-decoration: none;
     text-transform: uppercase;
-    font-weight: 700; }
+    font-weight: 800; }
 
 .social-nav__list {
   list-style: none;
   display: flex; }
 
 .social-nav__link {
-  text-decoration: none; }
+  padding: .5rem; }
+
+.social-nav__icon {
+  width: 1rem;
+  height: 1rem;
+  fill: #5db380; }
 
 .header {
   min-height: 8rem;
