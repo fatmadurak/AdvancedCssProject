@@ -2,29 +2,33 @@
  
 
   
-  .social-nav{
+.social-nav{
+  
+    &__list{
   
   
-  }
-  
-  .social-nav__list{
-  
-  
-      list-style: none;
-    
-  
-      display: flex;
+        list-style: none;
       
+    
+        display: flex;
+        
+    }
+    
+    &__item{
+    
+    
+    }
+    
+    &__link{
+    
+    text-decoration: none;
+    
+    }
+
+
+
+
   }
   
-  .social-nav__item{
   
-  
-  }
-  
-  .social-nav__link{
-  
-  text-decoration: none;
-  
-  }
 

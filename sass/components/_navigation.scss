@@ -6,46 +6,48 @@
     justify-content: space-between;
     align-items: center;
  
+ 
+   &__nav{
+
+    flex:0 0 80%;
+
+   }
 
 
-}
-
-.navigation__nav{
-
-flex:0 0 80%;
-
-
-
-}
-
-
-.navigation__list{
-
+   &__list{
 
     list-style: none;
    
 
     display: flex;
     justify-content: space-between;
-    
+
+
+   }
+
+   &__item{
+
+
+
+   }
+
+   &__link,__link:link,__link:visited{
+   
+        font-size: .8rem;
+        color:rgba(black, .7);
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 700;
+        
+   
+   }
+
+
+
+
 
 }
 
-.navigation__item{
 
 
 
-}
-
-.navigation__link,
-.navigation__link:link,
-.navigation__link:visited{
-
-font-size: .8rem;
-color:rgba(black, .7);
-text-decoration: none;
-text-transform: uppercase;
-font-weight: 700;
-
-
-}
