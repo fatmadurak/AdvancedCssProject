@@ -1,0 +1,51 @@
+.navigation{
+  
+    width: 75%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ 
+
+
+}
+
+.navigation__nav{
+
+flex:0 0 80%;
+
+
+
+}
+
+
+.navigation__list{
+
+
+    list-style: none;
+   
+
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+
+.navigation__item{
+
+
+
+}
+
+.navigation__link,
+.navigation__link:link,
+.navigation__link:visited{
+
+font-size: .8rem;
+color:rgba(black, .7);
+text-decoration: none;
+text-transform: uppercase;
+font-weight: 700;
+
+
+}
