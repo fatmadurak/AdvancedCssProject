@@ -38,6 +38,9 @@ body {
   font-size: 1.1rem; }
 
 .s1 {
+  font-size: .9rem;
+  color: #909090;
+  line-height: 1.7;
   /* orijinal font genişliğinde küçük*/ }
 
 .button {
@@ -172,10 +175,22 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around; }
+    justify-content: space-between; }
+  .sec-features__bottom {
+    min-height: 32rem;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; }
+  .sec-features__feature {
+    height: 20rem;
+    width: 25.2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
   .sec-features__icon {
     width: 2.5rem;
     height: 2.5rem;
-    fill: #fff; }
-  .sec-features span {
-    display: block; }
+    fill: #3dbe71; }
