@@ -63,6 +63,9 @@ body {
         top: 50%;
         transform: translate(-50%, -50%);
         opacity: 1; }
+  .button--middle {
+    font-size: .9rem;
+    padding: 1.5rem 7rem; }
 
 .navigation {
   width: 75%;
@@ -124,18 +127,18 @@ body {
     top: 5%; }
 
 .sec-info {
-  height: 90vh;
-  padding: 4rem 5rem 1rem 6rem;
+  padding: 10rem 7rem 1rem 8rem;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center; }
   .sec-info__container {
+    height: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center; }
+    justify-content: center; }
   .sec-info__left {
     flex: 0 0 50%;
-    height: 60vh;
+    height: 45%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -146,5 +149,5 @@ body {
     justify-content: center;
     align-items: center; }
   .sec-info__img {
-    width: 80%;
-    height: 80%; }
+    width: 90%;
+    height: 90%; }
