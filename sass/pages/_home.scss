@@ -1,0 +1,35 @@
+.sec-info{
+
+
+    background-color: red;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+ &__container{
+
+    background-color: yellow;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+ &__left{
+
+background-color: aqua;
+
+ }
+
+ &__right{
+
+
+    background-color: green;
+
+
+ }
+
+
+}

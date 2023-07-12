@@ -26,7 +26,7 @@ body {
   cursor: pointer;
   position: relative;
   outline: none;
-  /*tıklanınca izgi olmasın*/ }
+  /*tıklanınca çizgi olmasın*/ }
   .button span {
     position: absolute;
     left: 50%;
@@ -105,3 +105,18 @@ body {
     position: absolute;
     right: 10%;
     top: 5%; }
+
+.sec-info {
+  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .sec-info__container {
+    background-color: yellow;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .sec-info__left {
+    background-color: aqua; }
+  .sec-info__right {
+    background-color: gre; }
