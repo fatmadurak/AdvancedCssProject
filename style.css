@@ -107,16 +107,19 @@ body {
     top: 5%; }
 
 .sec-info {
-  background-color: red;
+  height: 40rem;
+  padding: 10rem 5rem 1rem 6rem;
   display: flex;
   justify-content: center;
   align-items: center; }
   .sec-info__container {
-    background-color: yellow;
     display: flex;
     justify-content: space-between;
     align-items: center; }
   .sec-info__left {
-    background-color: aqua; }
+    flex: 0 0 50%; }
   .sec-info__right {
-    background-color: gre; }
+    flex: 0 0 50%; }
+  .sec-info__img {
+    width: 80%;
+    height: 80%; }
