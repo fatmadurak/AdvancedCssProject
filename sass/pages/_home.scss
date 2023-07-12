@@ -1,9 +1,9 @@
 .sec-info{
 
 
-    height: 40rem;
-    padding: 10rem 5rem 1rem 6rem;
-
+    height: 90vh;
+    padding: 4rem 5rem 1rem 6rem;
+  
 
 
     display: flex;
@@ -16,7 +16,7 @@
 
 
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 
  }
@@ -24,6 +24,19 @@
  &__left{
 
 flex: 0 0 50%;
+height: 60vh;
+
+
+
+
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: flex-start;
+
+
+
+
 
 
  }
@@ -31,6 +44,11 @@ flex: 0 0 50%;
  &__right{
 
     flex: 0 0 50%;
+   
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 
 

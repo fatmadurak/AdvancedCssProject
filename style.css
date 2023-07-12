@@ -12,7 +12,24 @@ body {
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
-  line-height: 1.5; }
+  line-height: 1.5;
+  color: #504f4f; }
+
+.t1 {
+  /*en yüksek font genişliği*/
+  font-family: 'Nunito',sans-serif;
+  color: #17015d;
+  font-size: 2.3rem;
+  font-weight: 800;
+  line-height: 1.3; }
+  .t1 span {
+    display: block; }
+
+.t4 {
+  font-size: 1.1rem; }
+
+.s1 {
+  /* orijinal font genişliğinde küçük*/ }
 
 .button {
   padding: 1.25rem 3rem;
@@ -107,19 +124,27 @@ body {
     top: 5%; }
 
 .sec-info {
-  height: 40rem;
-  padding: 10rem 5rem 1rem 6rem;
+  height: 90vh;
+  padding: 4rem 5rem 1rem 6rem;
   display: flex;
   justify-content: center;
   align-items: center; }
   .sec-info__container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center; }
   .sec-info__left {
-    flex: 0 0 50%; }
+    flex: 0 0 50%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start; }
   .sec-info__right {
-    flex: 0 0 50%; }
+    flex: 0 0 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
   .sec-info__img {
     width: 80%;
     height: 80%; }
