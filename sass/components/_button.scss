@@ -1,68 +1,47 @@
-.button{
+.button {
+  padding: 1.25rem 3rem;
+  text-transform: uppercase;
+  border-radius: 5rem;
+  background-color: $color-primary;
+  color: $color-white;
+  border: none;
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+  position: relative;
+  outline: none; /*tıklanınca çizgi olmasın*/
 
-padding: 1.25rem 3rem;
-text-transform: uppercase;
-border-radius: 5rem;
-background-color: #3dbe71;
-color: #fff;
-border:none;
-font-size: .7rem;
-letter-spacing: 1px;
-cursor: pointer;
-position: relative;
-outline: none;  /*tıklanınca çizgi olmasın*/
- 
+  span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.2s ease-in; /* ease in yavaş başla hızlan*/
 
-
-span{
-
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%,-50%);
-  transition: all .2s ease-in;  /* ease in yavaş başla hızlan*/
-
-  &:last-child{
-   
-  transform: translate(-50%,0%);
-   top:100%;
-   opacity: 0;
-
-
-
-  }
-}
-
-
-&:hover,
-&:active{
-
-  background-color: #5db380;
-
-span{
-
- opacity: 0;
-
-  &:last-child{
-
-  top:50%;
-  transform: translate(-50%,-50%);
-  opacity: 1;
-
-
+    &:last-child {
+      transform: translate(-50%, 0%);
+      top: 100%;
+      opacity: 0;
+    }
   }
 
-}
+  &:hover,
+  &:active {
+    background-color:$color-primary;
 
+    span {
+      opacity: 0;
 
-}
-
-
-&--middle{
-
- font-size: .9rem;
- padding: 1.5rem 7rem;
-
-}
-
+      &:last-child {
+        top: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 1;
+      }
+    }
   }
+
+  &--middle {
+    font-size: 0.9rem;
+    padding: 1.5rem 7rem;
+  }
+}
