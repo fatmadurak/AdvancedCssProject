@@ -1,6 +1,6 @@
 # AdvancedCssProject
-**En çok tercih edilen layout yöntemi olan FLEXBOX, flexbox'ın çalışma mantığı ve flexbox ile layout oluşturma**
 
+**En çok tercih edilen layout yöntemi olan FLEXBOX, flexbox'ın çalışma mantığı ve flexbox ile layout oluşturma**
 
 **Sürdülebilir ve yeniden kullanılabilir css yazma**
 
@@ -10,4 +10,4 @@
 
 **Kompleks animasyonlar oluşturma ve kullanma**
 
-**İleri Css ve flexbox ile responsive hale getirme **
+**İleri Css ve flexbox ile responsive hale getirme**
