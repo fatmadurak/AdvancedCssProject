@@ -43,6 +43,12 @@ body {
   line-height: 1.7;
   /* orijinal font genişliğinde küçük*/ }
 
+.u-float-right {
+  float: right !important; }
+
+.u-text-align-right {
+  text-align: right !important; }
+
 .button {
   padding: 1.25rem 3rem;
   text-transform: uppercase;
@@ -199,7 +205,7 @@ body {
     fill: #3dbe71; }
 
 .sec-workflow {
-  height: 60rem;
+  height: 100vh;
   padding: 4rem 0 2rem 0;
   background-color: #e3f5eb;
   display: flex;
@@ -207,32 +213,33 @@ body {
   align-items: center;
   justify-content: space-between; }
   .sec-workflow__top {
-    background-color: mediumaquamarine;
-    height: 6rem;
+    height: 7rem;
     width: 70%;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between; }
+    justify-content: space-around; }
   .sec-workflow__bottom {
-    width: 85%;
+    height: 75%;
     display: flex;
     justify-content: space-between;
     align-items: center; }
   .sec-workflow__left {
     flex: 0 0 48%;
-    background-color: yellow;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center; }
+    align-items: flex-end; }
+  .sec-workflow__box {
+    width: 70%;
+    height: 10rem; }
   .sec-workflow__line-box {
     flex: 1;
     /*geri kalan boşlukları doldur*/
     height: 100%;
     display: flex;
-    align-items: stretch;
     justify-content: center; }
   .sec-workflow__line {
     width: 4px;
@@ -251,10 +258,19 @@ body {
   .sec-workflow__right {
     flex: 0  48%;
     height: 100%;
-    background-color: yellow;
     display: flex;
     flex-direction: column;
-    align-items: space-between; }
-    .sec-workflow__right__box {
-      width: 80%;
-      height: 10rem; }
+    align-items: space-between;
+    justify-content: center; }
+  .sec-workflow__icon {
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    border: 4px solid #e3a396;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    shape-outside: circle(50%);
+    float: left;
+    margin: 0 1rem; }
+  .sec-workflow__heading {
+    letter-spacing: 1px;
+    margin-bottom: .5rem; }
