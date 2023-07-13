@@ -169,9 +169,11 @@ body {
   padding: 4rem,6rem;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   align-items: center; }
   .sec-features__top {
     width: 70%;
+    text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -184,12 +186,13 @@ body {
     align-items: center;
     flex-wrap: wrap; }
   .sec-features__feature {
-    height: 20rem;
+    height: 13rem;
     width: 25.2%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center; }
+    justify-content: space-between;
+    align-items: center;
+    text-align: justify; }
   .sec-features__icon {
     width: 2.5rem;
     height: 2.5rem;
