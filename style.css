@@ -165,8 +165,8 @@ body {
     height: 85%; }
 
 .sec-features {
-  min-height: 50rem;
-  padding: 4rem,6rem;
+  min-height: 55rem;
+  padding: 7rem,6rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -197,3 +197,64 @@ body {
     width: 2.5rem;
     height: 2.5rem;
     fill: #3dbe71; }
+
+.sec-workflow {
+  height: 60rem;
+  padding: 4rem 0 2rem 0;
+  background-color: #e3f5eb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; }
+  .sec-workflow__top {
+    background-color: mediumaquamarine;
+    height: 6rem;
+    width: 70%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; }
+  .sec-workflow__bottom {
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .sec-workflow__left {
+    flex: 0 0 48%;
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; }
+  .sec-workflow__line-box {
+    flex: 1;
+    /*geri kalan boşlukları doldur*/
+    height: 100%;
+    display: flex;
+    align-items: stretch;
+    justify-content: center; }
+  .sec-workflow__line {
+    width: 4px;
+    height: 100%;
+    background-color: #e3a396;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; }
+  .sec-workflow__circle {
+    display: block;
+    width: 1.3rem;
+    height: 1.3rem;
+    border-radius: 50%;
+    background-color: #e3a396; }
+  .sec-workflow__right {
+    flex: 0  48%;
+    height: 100%;
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between; }
+    .sec-workflow__right__box {
+      width: 80%;
+      height: 10rem; }
