@@ -293,3 +293,30 @@ align-items: center;
 }
 
 
+.sec-card{
+
+height: 60rem;
+padding: 4rem 5rem 2rem 5rem;
+background-color: #edeeee;
+
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items:center ;
+ 
+
+&__cards{
+
+width: 100%;
+flex: 0 90%;
+background-color: orange;
+
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+}
+
+
+}
+

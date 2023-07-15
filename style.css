@@ -85,6 +85,50 @@ body {
     font-size: 0.9rem;
     padding: 1.5rem 7rem; }
 
+.card {
+  height: 80%;
+  width: 30%;
+  border-radius: 4px;
+  box-shadow: 0 2rem 2.5rem rgba(0, 0, 0, 0.2);
+  background-color: white;
+  display: flex;
+  flex-direction: column; }
+  .card__top {
+    flex: 0 45%;
+    background-image: linear-gradient(to right bottom, rgba(61, 190, 113, 0.9), rgba(163, 235, 177, 0.7));
+    border-radius: 4px 4px 0px 0px;
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around; }
+  .card__img {
+    width: 4rem;
+    height: 4rem;
+    fill: #fff; }
+  .card__texts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    line-height: 1; }
+  .card__title {
+    font-size: 1.2rem;
+    letter-spacing: 2px; }
+  .card__price {
+    font-family: 'Nunito,san-serif';
+    font-weight: 800;
+    font-size: 2.7rem; }
+    .card__price sup {
+      font-size: .8rem; }
+  .card__text {
+    font-size: 1rem; }
+  .card__bottom {
+    flex: 0 55%;
+    background-color: yellow;
+    border-radius: 0px 0px 4px 4px; }
+
 .counter {
   height: 20rem;
   width: 22%;
@@ -304,7 +348,7 @@ body {
 .sec-counter {
   height: 58rem;
   padding: 3rem 6rem;
-  background-image: linear-gradient(to bottom, rgba(227, 163, 150, 0.6), rgba(227, 163, 150, 0.5)), url("../imgs/counter-bg-2000.jpg");
+  background-image: linear-gradient(to bottom, rgba(227, 163, 150, 0.6), rgba(227, 163, 150, 0.5)), url("../../imgs/counter-bg-2000.jpg");
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -324,6 +368,22 @@ body {
     align-items: center; }
   .sec-counter__bottom {
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+
+.sec-card {
+  height: 60rem;
+  padding: 4rem 5rem 2rem 5rem;
+  background-color: #edeeee;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; }
+  .sec-card__cards {
+    width: 100%;
+    flex: 0 90%;
+    background-color: orange;
     display: flex;
     justify-content: space-between;
     align-items: center; }
