@@ -304,7 +304,7 @@ body {
 .sec-counter {
   height: 58rem;
   padding: 3rem 6rem;
-  background-image: linear-gradient(to bottom, rgba(227, 163, 150, 0.6), rgba(227, 163, 150, 0.5)), url("../../imgs/counter-bg-2000.jpg");
+  background-image: linear-gradient(to bottom, rgba(227, 163, 150, 0.6), rgba(227, 163, 150, 0.5)), url("../imgs/counter-bg-2000.jpg");
   background-size: cover;
   display: flex;
   justify-content: center;
