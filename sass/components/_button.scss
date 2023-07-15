@@ -44,4 +44,26 @@
     font-size: 0.9rem;
     padding: 1.5rem 7rem;
   }
+
+
+  &--pink{
+
+    background-color: #ee4266;
+
+    &:hover{
+
+      background-color:rgba( #ee4266, .4);
+    }
+
+  }
+  &--purple{
+
+    background-color: #540d6e;
+    
+    
+    &:hover{
+
+      background-color:rgba(#540d6e, .4);
+    }
+  }
 }
