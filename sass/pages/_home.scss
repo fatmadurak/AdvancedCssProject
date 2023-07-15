@@ -240,3 +240,56 @@ margin: 0 1rem;
 
 
 }
+
+
+.sec-counter{
+
+  height: 58rem;
+  padding: 3rem 6rem;
+  background-image:linear-gradient(to bottom,rgba(#e3a396,.6),rgba(#e3a396,.5)), url("../../imgs/counter-bg-2000.jpg");
+  background-size: cover;
+
+
+  display: flex;
+  justify-content: center;
+  align-items: space-around;
+
+&__container{
+
+  width: 80%;
+  height: 90%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+&__top{
+
+
+width: 85%;
+text-align: center;
+display: flex;
+flex-direction: column;
+align-items: center;
+
+
+}
+
+&__bottom{
+
+width: 100%;
+
+
+display: flex;
+justify-content: space-between;
+align-items: center;
+
+}
+
+
+}
+
+
