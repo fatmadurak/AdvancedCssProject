@@ -440,3 +440,15 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center; }
+
+.sec-idea {
+  height: 45rem;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.5)), url(../imgs/sec-idea-bg-2000.jpg);
+  background-size: cover;
+  background-attachment: fixed; }
+  .sec-idea__text {
+    font-family: 'Nunito,san-serif';
+    font-weight: 200;
+    font-size: 3.5rem;
+    color: #fff;
+    letter-spacing: 2px; }
