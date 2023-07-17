@@ -348,3 +348,36 @@ align-items: center;
 
 }
 
+.sec-comment{
+
+height: 50rem;
+padding: 4rem 3rem;
+background-color:rgba( #b4bbbd,0.7 );
+
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items:center ;
+
+&__top{
+
+  flex: 0 10%;
+ 
+  display: flex;
+  justify-content: center;
+
+}
+
+&__bottom{
+
+ 
+flex: 0 90%;
+width: 70%;
+
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+
+ 
+}

@@ -22,6 +22,12 @@ color:$color-primary;
 
 }
 
+&--white{
+
+    color:$color-white;
+    text-shadow: 2px 2px rgba($color-black,.4);
+}
+
 }
 .t3{
 

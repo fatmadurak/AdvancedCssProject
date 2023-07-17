@@ -1,0 +1,94 @@
+.comment{
+
+height: 23rem;
+width: 20%;
+
+position: relative;
+
+
+
+&__img{
+
+width: 6rem;
+height: 6rem;
+border-radius: 50%;
+box-shadow: -4px 3px 4px 3px rgba($color-black,.3);
+
+position: absolute;
+right: 5%;
+top:-12%;
+z-index: 10;
+
+
+
+}
+
+&__shadow{
+    
+height: 100%;
+-webkit-filter:drop-shadow(-1px 6px 3px rgba(#323200,.5)); 
+filter: drop-shadow(-1px 6px 3px rgba(#323200,.5));
+
+}
+
+&__content{
+
+height: 100%;
+position: relative;
+background-color: rgba(255, 255, 255, .9);
+
+clip-path: polygon(0 0,100% 10%,100% 90%,25% 100%,0 75% );
+padding: 4rem 1rem;
+
+
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+
+
+
+
+&::before{
+
+    content: url("../imgs/left-quote.png");
+    position: absolute;
+    left:3%;
+    top:0%;
+    transform: scale(.7);
+    opacity: .4;
+}
+
+}
+
+&__text{
+
+  
+width: 100%;
+font-size: .8rem;
+font-weight: 600;
+letter-spacing: 1px;
+color:#504f4f;
+text-align: justify;
+
+}
+
+&__author{
+
+width: 100%;
+font-family: 'Nunito,san-serif';
+font-weight: 200;
+font-size: .8rem;
+letter-spacing: 1px;
+text-align: right;
+
+}
+
+
+&:nth-child(2),
+&:nth-child(4){
+
+    align-self: flex-end;
+}
+
+}

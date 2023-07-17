@@ -31,6 +31,9 @@ body {
   color: #17015d; }
   .t2--green {
     color: #3dbe71; }
+  .t2--white {
+    color: #fff;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.4); }
 
 .t3 {
   font-size: 1.2rem;
@@ -185,6 +188,57 @@ body {
     background-image: linear-gradient(to right bottom, #ee4266, rgba(232, 136, 156, 0.3)); }
   .card--purple {
     background-image: linear-gradient(to right bottom, rgba(84, 13, 110, 0.8), rgba(83, 45, 97, 0.2)); }
+
+.comment {
+  height: 23rem;
+  width: 20%;
+  position: relative; }
+  .comment__img {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    box-shadow: -4px 3px 4px 3px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    right: 5%;
+    top: -12%;
+    z-index: 10; }
+  .comment__shadow {
+    height: 100%;
+    -webkit-filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
+    filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5)); }
+  .comment__content {
+    height: 100%;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.9);
+    clip-path: polygon(0 0, 100% 10%, 100% 90%, 25% 100%, 0 75%);
+    padding: 4rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center; }
+    .comment__content::before {
+      content: url("../imgs/left-quote.png");
+      position: absolute;
+      left: 3%;
+      top: 0%;
+      transform: scale(0.7);
+      opacity: .4; }
+  .comment__text {
+    width: 100%;
+    font-size: .8rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #504f4f;
+    text-align: justify; }
+  .comment__author {
+    width: 100%;
+    font-family: 'Nunito,san-serif';
+    font-weight: 200;
+    font-size: .8rem;
+    letter-spacing: 1px;
+    text-align: right; }
+  .comment:nth-child(2), .comment:nth-child(4) {
+    align-self: flex-end; }
 
 .counter {
   height: 20rem;
@@ -459,3 +513,22 @@ body {
     font-size: 3.5rem;
     color: #fff;
     letter-spacing: 2px; }
+
+.sec-comment {
+  height: 50rem;
+  padding: 4rem 3rem;
+  background-color: rgba(180, 187, 189, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; }
+  .sec-comment__top {
+    flex: 0 10%;
+    display: flex;
+    justify-content: center; }
+  .sec-comment__bottom {
+    flex: 0 90%;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
