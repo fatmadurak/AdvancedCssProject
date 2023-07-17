@@ -330,6 +330,10 @@ align-items: center;
   background-size: cover;
   background-attachment: fixed;
 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   
   &__text{
 
