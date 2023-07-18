@@ -10,21 +10,25 @@
    &__top{
 
     flex: 0 85%;
-
     background-color: #ececec;
+   
 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
 
+
+
+
+
    }
 
    &__contact{
 
       flex: 0 50%;
-      width: 100%;
-    
+      width: 90%;
+      border-bottom: 1px solid rgba(61, 190, 113, 0.5);
 
       display: flex;
       justify-content: space-around;
@@ -37,7 +41,8 @@
   
       flex:0 50%;
       width: 60%;
-     
+    
+
       display: flex;
       justify-content: center;
 
