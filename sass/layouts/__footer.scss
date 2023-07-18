@@ -1,0 +1,142 @@
+.footer{
+
+   height: 25rem;
+   box-shadow:3px 3px 7px 10px rgba($color-black, .2) ;
+
+   display: flex;
+   flex-direction: column;
+
+
+   &__top{
+
+    flex: 0 85%;
+
+    background-color: #ececec;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+   }
+
+   &__contact{
+
+      flex: 0 50%;
+      width: 100%;
+    
+
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      
+   }
+
+   &__links{
+
+  
+      flex:0 50%;
+      width: 60%;
+     
+      display: flex;
+      justify-content: center;
+
+   
+
+   }
+
+   &__container{
+
+  flex:0 20%;
+
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  
+
+
+   }
+
+  &__header{
+
+   font-size: 1.2rem;
+   font-family: "Nunito", sans-serif;
+   font-weight: 200;
+   line-height: 1.5;
+ 
+  }
+
+  &__underline{
+
+   display: block;
+   width: 3rem;
+   height: 2px;
+   background-color: #3dbe71;
+
+
+  }
+
+  &__list{
+
+   list-style: none;
+  
+
+  }
+
+  &__item{
+
+   
+   position: relative;
+   text-indent: 1rem;
+   &::before{
+
+      content: url(../imgs/sign.png);
+      position: absolute;
+      left: -5%;
+      top: 0;
+      transform: scale(0.4);
+ 
+
+   }
+
+  }
+  &__link{
+
+   text-decoration: none;
+   letter-spacing: 1px;
+   font-weight: 300;
+   color: #909090;
+
+   &:hover{
+
+      color:$color-primary;
+   }
+
+  }
+   &__bottom{
+
+   flex:1;
+   background-color:#5db380 ;
+
+    
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ 
+   }
+
+   &__copyright{
+
+
+   font-size: .8rem;
+   font-weight: 600;
+   letter-spacing: 1px;
+   color:rgba($color-white, .8);
+
+
+   }
+
+
+
+}
