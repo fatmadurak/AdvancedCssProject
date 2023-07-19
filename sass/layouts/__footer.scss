@@ -11,7 +11,7 @@
 
     flex: 0 85%;
     background-color: #ececec;
-   
+    padding: 0 2rem 2rem 2rem;
 
     display: flex;
     flex-direction: column;
@@ -29,7 +29,7 @@
       flex: 0 50%;
       width: 90%;
       border-bottom: 1px solid rgba(61, 190, 113, 0.5);
-
+ 
       display: flex;
       justify-content: space-around;
       align-items: center;
@@ -39,12 +39,12 @@
    &__links{
 
   
-      flex:0 50%;
+
       width: 60%;
     
 
       display: flex;
-      justify-content: center;
+     justify-content: space-between;
 
    
 
@@ -57,7 +57,7 @@
 
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+
   
 
 
@@ -77,7 +77,7 @@
    display: block;
    width: 3rem;
    height: 2px;
-   background-color: #3dbe71;
+   background-color:$color-primary;
 
 
   }
@@ -85,6 +85,8 @@
   &__list{
 
    list-style: none;
+   line-height: 2;
+   margin-top: 1rem;
   
 
   }
@@ -93,7 +95,8 @@
 
    
    position: relative;
-   text-indent: 1rem;
+   text-indent: 1.5rem;
+
    &::before{
 
       content: url(../imgs/sign.png);
@@ -108,12 +111,18 @@
   }
   &__link{
 
+  &,
+  &:link,
+  &:visited{
+
    text-decoration: none;
    letter-spacing: 1px;
    font-weight: 300;
    color: #909090;
+  }
 
-   &:hover{
+   &:hover,
+   &:active{
 
       color:$color-primary;
    }
