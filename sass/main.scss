@@ -9,11 +9,14 @@
 @import "components/comments";
 @import "components/contact-info";
 @import "components/counter";
+@import "components/form";
 @import "components/navigation";
 @import "components/social-nav";
  
 @import "layouts/header";
-@import "layouts/_footer";
+@import "layouts/_footer";  
 
+           
+@import "pages/contactus";  
 @import "pages/home";                      
                                                                
