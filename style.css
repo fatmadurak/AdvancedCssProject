@@ -245,13 +245,16 @@ body {
   width: 100%;
   height: 100%; }
   .contact-info__list {
-    width: 100%;
     height: 100%;
     list-style: none;
     font-weight: 300;
     color: #909090;
     display: flex;
     align-items: center; }
+    .contact-info__list--vertical {
+      height: 100%;
+      flex-direction: column;
+      justify-content: space-around; }
   .contact-info__item {
     flex: 1;
     height: 50%;
@@ -264,11 +267,6 @@ body {
     width: 1.5rem;
     height: 1.5rem;
     fill: #3dbe71; }
-  .contact-info--flex .contact-info__list {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
 
 .counter {
   height: 20rem;
@@ -298,11 +296,43 @@ body {
 
 .form {
   width: 100%;
-  height: 100%;
-  background-color: red;
+  height: 30rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-around; }
+  justify-content: space-around;
+  align-items: center; }
+  .form__heading {
+    font-family: "Nunito,san-serif";
+    font-weight: 200;
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #3dbe71; }
+  .form__input {
+    font-family: "Nunito,san-serif";
+    font-size: 1.1rem;
+    width: 80%;
+    padding: .8rem 1rem;
+    margin: .8rem;
+    border: none;
+    border: 1px solid #3dbe71;
+    transition: all .1s; }
+    .form__input:focus {
+      border: 2px solid #3dbe71;
+      outline: none; }
+  .form__message {
+    font-family: "Nunito,san-serif";
+    font-size: 1.1rem;
+    width: 80%;
+    padding: .8rem 1rem;
+    margin: .8rem;
+    border: none;
+    border: 1px solid #3dbe71;
+    transition: all .1s;
+    resize: none; }
+    .form__message:focus {
+      border: 2px solid #3dbe71;
+      outline: none; }
 
 .navigation {
   width: 70%;
@@ -374,6 +404,7 @@ body {
         fill: #fff; }
 
 .header {
+  width: 100%;
   min-height: 8rem;
   position: relative;
   display: flex;
@@ -454,27 +485,29 @@ body {
     letter-spacing: 1px;
     color: rgba(255, 255, 255, 0.8); }
 
+.container-contactus {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
 .contactus {
   height: 40rem;
   width: 80%;
-  background-color: lightblue;
   display: flex;
   justify-content: space-around;
   align-items: center; }
   .contactus__left {
     flex: 0 60%;
-    height: 100%;
-    background-color: yellow;
+    height: 80%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center; }
   .contactus__right {
-    height: 80%;
-    background-color: rgba(0, 0, 0, 0.7);
-    display: flex;
-    align-items: center;
-    justify-content: center; }
+    flex: 1;
+    height: 60%;
+    background-color: rgba(0, 0, 0, 0.7); }
 
 .sec-info {
   padding: 9rem 7rem 1rem 8rem;

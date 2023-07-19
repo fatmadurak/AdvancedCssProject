@@ -1,0 +1,20 @@
+@mixin input{
+
+    font-family: "Nunito,san-serif";
+    font-size: 1.1rem;
+    width: 80%;
+    padding: .8rem 1rem;
+    margin: .8rem;
+    border: none;
+    border: 1px solid $color-primary;
+    transition: all .1s;
+
+    &:focus{  
+
+        border: 2px solid $color-primary;
+        outline: none;
+
+    }
+    @content;
+
+}
