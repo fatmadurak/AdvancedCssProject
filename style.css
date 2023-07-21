@@ -348,22 +348,58 @@ body {
       outline: none; }
 
 .navigation {
-  background-color: orange;
-  width: 70%;
+  width: 90%;
   position: relative;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center; }
+  .navigation__checkbox {
+    position: absolute; }
+  .navigation__button {
+    display: block;
+    position: absolute;
+    background-color: #3dbe71;
+    top: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    padding: 4px;
+    height: 2rem;
+    width: 2.5rem;
+    border-radius: 2px; }
+  .navigation__line {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 1.4rem;
+    height: 2.5px;
+    background-color: #fff; }
+    .navigation__line::before, .navigation__line::after {
+      content: " ";
+      position: absolute;
+      left: 0;
+      width: 1.4rem;
+      height: 2.5px;
+      background-color: #fff; }
+    .navigation__line::before {
+      top: -6px; }
+    .navigation__line::after {
+      top: 7px; }
   .navigation .nav-top {
-    flex: 0 0 80%;
+    flex: 0 0 75%;
     display: flex;
     justify-content: space-between;
     align-items: center; }
+    @media only screen and (max-width: 768px) {
+      .navigation .nav-top {
+        display: none; } }
     .navigation .nav-top__list {
       flex: 0 0 80%;
       list-style: none;
       display: flex;
-      justify-content: space-between; }
+      justify-content: space-around; }
     .navigation .nav-top__link {
       position: relative; }
       .navigation .nav-top__link::after {
@@ -376,7 +412,7 @@ body {
         background-color: #3dbe71;
         transition: all .3s ease-in; }
       .navigation .nav-top__link:link, .navigation .nav-top__link:visited {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
         color: rgba(0, 0, 0, 0.5);
         text-transform: uppercase;
         font-weight: 600;
@@ -462,10 +498,16 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center; }
+  .header__logo {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    z-index: 10;
+    transform: translate(-50%, -50%); }
   .header__social-nav {
     position: absolute;
-    right: 8%;
-    top: 5%; }
+    right: 10%;
+    top: 3%; }
 
 .footer {
   height: 25rem;
