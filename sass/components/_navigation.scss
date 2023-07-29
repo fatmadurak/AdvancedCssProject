@@ -1,125 +1,82 @@
-.navigation{
-  
-   
-    width: 90%;
+.navigation {
+  width: 90%;
 
- 
-    position: relative;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
- 
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 
-    &__checkbox{
-
+  &__checkbox {
     position: absolute;
+  }
 
+  &__button {
+    display: block;
+    position: absolute;
+    background-color: $color-primary;
+    top: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+    padding: 4px;
+    height: 2rem;
+    width: 2.5rem;
+    border-radius: 2px;
+  }
 
+  &__line {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
 
-    }
+    display: block;
+    width: 1.4rem;
+    height: 2.5px;
+    background-color: $color-white;
 
-    &__button{
-
-      display: block;
+    &::before,
+    &::after {
+      content: " ";
       position: absolute;
-      background-color: $color-primary;
-      top:50%;
-      right: 0;
-      transform: translate(-50%,-50%);
-      cursor: pointer;
-      padding: 4px;
-      height: 2rem;
-      width: 2.5rem;
-      border-radius: 2px;
 
-    }
-
-    &__line{
-
-      position: absolute;
-      left:50%;
-      top:50%;
-      transform: translate(-50%,-50%);
-
-      display: block;
+      left: 0;
       width: 1.4rem;
       height: 2.5px;
       background-color: $color-white;
-  
-      &::before,
-      &::after{
-
-        content: " ";
-        position: absolute;
-    
-        left:0;
-        width: 1.4rem;
-        height: 2.5px;
-        background-color: $color-white;
-
-      }
-
-      &::before{
-
-       top:-6px;
-
-      }
-
-      &::after{
-
-        top:6px;
- 
-       }
-
-    
     }
- 
-   .nav-top{
 
-    flex:0 0 75%;
+    &::before {
+      top: -6px;
+    }
 
+    &::after {
+      top: 6px;
+    }
+  }
+
+  .nav-top {
+    flex: 0 0 75%;
 
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-
-
-    @media only screen and (max-width:768px) {
-
-    display: none;
-
-
-
-
-      
+    @media only screen and (max-width: 768px) {
+      display: none;
     }
 
-
-
-
-
-    &__list{
-
-      
-      flex:0 0 80%;
+    &__list {
+      flex: 0 0 80%;
       list-style: none;
-    ;
-  
       display: flex;
       justify-content: space-around;
-  
-  
-     }
-  
-  
-  
-     &__link{
-  
-       position: relative;
-  
-       &::after{
-  
+    }
+
+    &__link {
+      position: relative;
+
+      &::after {
         content: "";
         position: absolute;
         left: 0;
@@ -127,129 +84,101 @@
         width: 0;
         height: 3px;
         background-color: $color-primary;
-        transition: all .3s ease-in;
-  
-       }
-  
-       &:link,&:visited{
-     
+        transition: all 0.3s ease-in;
+      }
+
+      &:link,
+      &:visited {
         font-size: 0.8rem;
-      color: rgba(0, 0, 0, 0.5);
-      text-transform: uppercase;
-      font-weight: 600;
-      text-decoration: none;
-          
-     
-     }
-  
-  
-     &:hover,
-     &:active{
-  
-          &::after{
-  
-  
-            width: 100%;
-       }
-  
-  
-     }
-     
-  
-  
+        color: rgba(0, 0, 0, 0.5);
+        text-transform: uppercase;
+        font-weight: 600;
+        text-decoration: none;
+      }
+
+      &:hover,
+      &:active {
+        &::after {
+          width: 100%;
+        }
+      }
+    }
   }
 
-   }
-
-
-   .nav-bottom{
-
+  .nav-bottom {
+    visibility: hidden;
     position: absolute;
     left: 0;
-    top:2rem;
+    top: 2rem;
 
     width: 100%;
-    padding: 2rem 0;
     height: 24rem;
-    background-color: rgba($color-black, .5);
-    box-shadow: 0 2px 5px 2px rgba($color-black, .2);
+    padding: 2rem 0;
+    background-color: rgba($color-black, 0.5);
+    box-shadow: 0 2px 5px 2px rgba($color-black, 0.2);
+    z-index: 1;
 
-    @supports( -webkit-backdrop-filter: blur(8px))or ( backdrop-filter: blur(8px)){
 
-      -webkit-backdrop-filter: blur(8px);
-      backdrop-filter: blur(8px);
-      background-color: rgba($color-black, .4);
-    }
-
- 
- 
-    display: flex;
+    display:none;
     flex-direction: column;
-    justify-content: space-between; 
+    justify-content: space-between;
     align-items: center;
 
-    &__list{
-
-     list-style: none;
-
-     display: flex;
-     flex-direction: column;
-     justify-content: space-between;
-     align-items: center;
-
+    @supports (-webkit-backdrop-filter: blur(8px)) or
+      (backdrop-filter: blur(8px)) {
+      -webkit-backdrop-filter: blur(8px);
+      backdrop-filter: blur(8px);
+      background-color: rgba($color-black, 0.4);
     }
 
-    &__link{
+ 
 
-   &,
-   &:link,
-   &:visited{
+    &__list {
+      list-style: none;
 
-   display: block;
-   font-size: 1.2rem;
-   text-decoration: none;
-   color: $color-white;
-   padding: .5rem 0;
-   letter-spacing: 2px;
-   text-transform: uppercase;
-
-
-
-   &:hover,
-   &:active{
-
-    color: $color-secondary; 
-
-   }
-
-   }
-
-
-
-
-
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
     }
+    &__link {
+      &,
+      &:link,
+      &:visited {
+        display: block;
+        font-size: 1.2rem;
+        text-decoration: none;
+        color: $color-white;
+        padding: 0.5rem 0;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+      }
+      &:hover,
+      &:active {
+        color: $color-secondary;
+      }
+    }
+  }
 
+  &__checkbox:checked ~ .nav-bottom {
+    display: flex;
 
-   }
+    animation: anim-nav-bottom 0.4s ease-in 0.2s;
+    animation-fill-mode: forwards;
+  }
 
-&__checkbox:checked + &__button &__line{  /* navbar checkbox check ettiğinde hemen sonrasındaki labeli seç  içerisindeki line ulaş  */
+  &__checkbox:checked + &__button &__line {
+    animation: anim-nav-button-line 0.3s;
+    animation-fill-mode: forwards;
+  }
 
+  &__checkbox:checked + &__button &__line::before {
+    animation: anim-nav-button-line-before 0.5s;
+    animation-fill-mode: forwards;
+  }
 
-animation:
-
-
-
+  &__checkbox:checked + &__button &__line::after {
+    animation: anim-nav-button-line-after 0.5s;
+    animation-fill-mode: forwards;
+  }
 }
-
-
-
-
-
-
-
- }
-
-
-
-
