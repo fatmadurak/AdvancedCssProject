@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 /* 
@@ -22,10 +22,18 @@ masaüstü - (1025-1200px)
 
 html {
   font-size: 100%; /* 1rem=16px*/
+
+@media only screen and(max-width:1024px)
+{
+
+font-size: 90%;
+
+}
+
 }
 
 body {
-  box-sizing: border-box;
+
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   line-height: 1.5;

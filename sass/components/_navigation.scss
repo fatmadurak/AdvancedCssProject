@@ -15,6 +15,7 @@
     position: absolute;
 
 
+
     }
 
     &__button{
@@ -66,7 +67,7 @@
 
       &::after{
 
-        top:7px;
+        top:6px;
  
        }
 
@@ -231,6 +232,22 @@
 
 
    }
+
+&__checkbox:checked + &__button &__line{  /* navbar checkbox check ettiğinde hemen sonrasındaki labeli seç  içerisindeki line ulaş  */
+
+
+animation:
+
+
+
+}
+
+
+
+
+
+
+
  }
 
 
