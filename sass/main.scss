@@ -1,26 +1,23 @@
 @import "abstracts/mixins";
 @import "abstracts/variables";
 
-
-
-@import "base/animations";
+@import "base/animations"; 
 @import "base/base";
 @import "base/typography";
 @import "base/utilities";
 
-@import "components/button";  
+@import "components/button";
 @import "components/card";
 @import "components/comments";
 @import "components/contact-info";
 @import "components/counter";
-@import "components/form";  
+@import "components/form";
 @import "components/navigation";
 @import "components/social-nav";
- 
-@import "layouts/header";
-@import "layouts/_footer";  
 
-                                                 
-@import "pages/contactus";  
-@import "pages/home";                        
-                                                                           
+@import "layouts/header";
+@import "layouts/_footer";
+
+@import "pages/contactus";
+@import "pages/home";
+ 
