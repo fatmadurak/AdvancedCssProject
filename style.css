@@ -683,7 +683,6 @@ body {
 .sec-info {
   padding: 9rem 7rem 1rem 8rem;
   height: 80vh;
-  background-color: yellow;
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -693,7 +692,7 @@ body {
       padding: 1rem 3rem; } }
   @media only screen and (max-width: 480px) {
     .sec-info {
-      height: 90vh;
+      height: 70vh;
       padding: 1rem; } }
   .sec-info__container {
     height: 100%;
@@ -704,7 +703,6 @@ body {
         flex-direction: column-reverse; } }
   .sec-info__left {
     flex: 0 0 50%;
-    background-color: red;
     height: 65%;
     display: flex;
     flex-direction: column;
@@ -713,7 +711,6 @@ body {
     @media only screen and (max-width: 768px) {
       .sec-info__left {
         flex: 0 0 40%;
-        background: saddlebrown;
         height: 75%; } }
     @media only screen and (max-width: 480px) {
       .sec-info__left {
