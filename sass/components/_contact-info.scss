@@ -12,6 +12,15 @@
     
      
      }
+
+
+     @media only screen and (max-width:480px){
+
+        height: 85%;
+     
+       
+        
+        }
     &__list{
 
   height:100%;
@@ -32,7 +41,15 @@
      
       
       }
+          
+   @media only screen and (max-width:480px){
 
+    
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-between;
+     
+     }
 
 
 
@@ -80,6 +97,14 @@
         width: 1.5rem;
         height: 1.5rem;
         fill:$color-primary;
+
+
+         
+    @media only screen and (max-width:480px){
+
+       margin-bottom: 0;
+           
+           }
 
     }
 

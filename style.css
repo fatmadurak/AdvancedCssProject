@@ -302,6 +302,9 @@ body {
   @media only screen and (max-width: 768px) {
     .contact-info {
       height: 80%; } }
+  @media only screen and (max-width: 480px) {
+    .contact-info {
+      height: 85%; } }
   .contact-info__list {
     height: 100%;
     list-style: none;
@@ -313,6 +316,11 @@ body {
       .contact-info__list {
         flex-wrap: wrap;
         justify-content: center; } }
+    @media only screen and (max-width: 480px) {
+      .contact-info__list {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: space-between; } }
     .contact-info__list--vertical {
       height: 100%;
       flex-direction: column;
@@ -332,6 +340,9 @@ body {
     width: 1.5rem;
     height: 1.5rem;
     fill: #3dbe71; }
+    @media only screen and (max-width: 480px) {
+      .contact-info__icon {
+        margin-bottom: 0; } }
 
 .counter {
   height: 20rem;
@@ -621,7 +632,8 @@ body {
     @media only screen and (max-width: 480px) {
       .footer__top {
         flex: 1;
-        padding: 0; } }
+        padding: 0;
+        justify-content: space-around; } }
   .footer__contact {
     flex: 0 50%;
     width: 90%;
@@ -648,11 +660,17 @@ body {
         /*contrent breakpoint*/
         flex-wrap: wrap;
         height: 50%;
-        width: 98%; } }
+        width: 98%;
+        margin-top: 5rem; } }
   .footer__container {
-    flex: 0 20%;
+    flex: 0 33%;
     display: flex;
     flex-direction: column; }
+  @media only screen and (max-width: 480px) {
+    .footer {
+      /*contrent breakpoint*/ }
+      .footer__container:last-child {
+        flex: 0 100%; } }
   .footer__header {
     font-size: 1.2rem;
     font-family: "Nunito", sans-serif;
