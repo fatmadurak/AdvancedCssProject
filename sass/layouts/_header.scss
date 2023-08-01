@@ -19,15 +19,47 @@ top: 50%;
 z-index: 10;
 transform: translate(-50%,-50%);
 
+@media only screen and (max-width:768px){
+
+left:15%;
+
+
+}
+
+@media only screen and (max-width:529px){
+
+  left:23%;
+  
+  
+  }
+
+  @media only screen and (max-width:355px){
+
+    left:30%;
+    
+    
+    }
+
+
 }
 
 &__social-nav{
 
     position: absolute;
     right: 10%;
-    top:3%
+    top:3%;
     
+    @media only screen and (max-width:768px){
+
+      right:1%;
+      
+      
+      }
+
+
     }
+
+
     
 
 
