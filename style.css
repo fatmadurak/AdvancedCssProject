@@ -86,6 +86,9 @@ body {
   .t2--white {
     color: #fff;
     text-shadow: 2px 2px rgba(0, 0, 0, 0.4); }
+  @media only screen and (max-width: 480px) {
+    .t2 {
+      font-size: 1.5rem; } }
 
 .t3 {
   font-size: 1.2rem;
@@ -742,7 +745,7 @@ body {
 
 .sec-info {
   padding: 9rem 7rem 1rem 8rem;
-  height: 80vh;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -763,20 +766,26 @@ body {
         flex-direction: column-reverse; } }
   .sec-info__left {
     flex: 0 0 50%;
-    height: 65%;
+    height: 55%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start; }
+    @media only screen and (max-width: 1024px) {
+      .sec-info__left {
+        flex: 0 0 45%; } }
     @media only screen and (max-width: 768px) {
       .sec-info__left {
         flex: 0 0 40%;
-        height: 75%; } }
+        width: 100%; } }
     @media only screen and (max-width: 480px) {
       .sec-info__left {
-        flex: 0 0 30%;
+        flex: 0 0 37%;
         align-items: center;
         text-align: center; } }
+    @media only screen and (max-width: 375px) {
+      .sec-info__left {
+        flex: 0 0 42%; } }
   .sec-info__right {
     flex: 0 0 50%;
     display: flex;
@@ -790,38 +799,98 @@ body {
     height: 90%; }
 
 .sec-features {
-  min-height: 55rem;
-  padding: 7rem,6rem;
+  height: 55rem;
+  padding: 3rem 3rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center; }
+  @media only screen and (max-width: 768px) {
+    .sec-features {
+      height: 70rem; } }
+  @media only screen and (max-width: 480px) {
+    .sec-features {
+      height: 80rem;
+      justify-content: space-between;
+      padding: 1rem 1rem; } }
   .sec-features__top {
-    width: 70%;
+    width: 75%;
     text-align: center;
+    flex: 0 20%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between; }
+    justify-content: space-around; }
+    @media only screen and (max-width: 1024px) {
+      .sec-features__top {
+        width: 90%; } }
+    @media only screen and (max-width: 768px) {
+      .sec-features__top {
+        flex: 0 10%; } }
+    @media only screen and (max-width: 480px) {
+      .sec-features__top {
+        flex: 0 7%; } }
   .sec-features__bottom {
-    min-height: 32rem;
-    width: 70%;
+    flex: 0 80%;
+    width: 75%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap; }
+    @media only screen and (max-width: 1200px) {
+      .sec-features__bottom {
+        width: 100%;
+        flex: 0 100%; } }
+    @media only screen and (max-width: 1024px) {
+      .sec-features__bottom {
+        width: 100%;
+        flex: 0 90%; } }
+    @media only screen and (max-width: 768px) {
+      .sec-features__bottom {
+        justify-content: space-between; } }
+    @media only screen and (max-width: 480px) {
+      .sec-features__bottom {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        align-items: center; } }
   .sec-features__feature {
-    height: 13rem;
+    height: 15rem;
     width: 25.2%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     text-align: justify; }
+    @media only screen and (max-width: 1024px) {
+      .sec-features__feature {
+        height: 17rem;
+        width: 30%;
+        justify-content: flex-start; } }
+    @media only screen and (max-width: 768px) {
+      .sec-features__feature {
+        width: 45%; } }
+    @media only screen and (max-width: 480px) {
+      .sec-features__feature {
+        width: 80%;
+        height: 10rem; } }
   .sec-features__icon {
     width: 2.5rem;
     height: 2.5rem;
     fill: #3dbe71; }
+  .sec-features__heading {
+    white-space: nowrap; }
+    @media only screen and (max-width: 1024px) {
+      .sec-features__heading {
+        font-size: 1rem; } }
+    @media only screen and (max-width: 480px) {
+      .sec-features__heading {
+        font-size: .8rem; } }
+  @media only screen and (max-width: 1024px) {
+    .sec-features__p {
+      font-size: 1rem; } }
+  @media only screen and (max-width: 480px) {
+    .sec-features__p {
+      font-size: .8rem; } }
 
 .sec-workflow {
   height: 100vh;

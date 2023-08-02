@@ -42,12 +42,23 @@ color:$color-primary;
     text-shadow: 2px 2px rgba($color-black,.4);
 }
 
+@media only screen and (max-width:480px){
+
+    font-size: 1.5rem;
+    
+    
+    }
+
+
+
 }
 .t3{
 
     font-size: 1.2rem;
     color:$color-secondary;
     
+
+ 
     
 }
 
@@ -62,6 +73,9 @@ color:$color-primary;
     
     
     }
+
+
+
 
 }
 .s1{
