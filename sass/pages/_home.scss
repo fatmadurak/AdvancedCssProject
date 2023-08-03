@@ -364,7 +364,14 @@ height: 70rem;
          
          
          }
+         @media only screen and (max-width:540px){
 
+  
+          font-size: .9rem; 
+    
+             
+             
+             }
 
          @media only screen and (max-width:480px){
 
@@ -395,6 +402,16 @@ flex-direction: column;
 align-items: center;
 justify-content: space-between;
 
+@media only screen and (max-width:768px){ 
+
+ justify-content: center;
+
+
+      
+      
+      }
+
+
 &__top{
 
 height: 7rem;
@@ -406,6 +423,16 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: space-around;
+
+@media only screen and (max-width:768px){ 
+
+margin-bottom: .5rem;
+ 
+height:8rem;
+
+       
+       
+       }
 }
 
 
@@ -418,6 +445,8 @@ height: 75%;
 display: flex;
 justify-content: space-between;
 align-items: center;
+
+
 
 
 }
@@ -438,13 +467,28 @@ align-items: flex-end;
 
   width: 70%;
   height: 10rem;
+ background-color: yellow;
 
+  @media only screen and (max-width:1024px){ 
 
   
+    width: 95%;  
+   
+
+       height: 7rem;    
+           
+           }
+  @media only screen and (max-width:768px){ 
 
   
-  }
+ width: 100%;  
+ height: 6rem;
+        
+        
+        }
+  
 
+      }
 &__line-box{
 
   flex: 1;  /*geri kalan boşlukları doldur*/
@@ -483,7 +527,7 @@ background-color: #e3a396;
 
   flex: 0  48%;
   height: 100%;
-
+ 
 
   display: flex;
   flex-direction: column;
@@ -505,6 +549,24 @@ shape-outside: circle(50%);
 float: left;
 margin: 0 1rem;
 
+@media only screen and (max-width:1024px){
+
+
+
+  width: 5rem;
+  height: 5rem;
+     
+     }
+
+     @media only screen and (max-width:1024px){
+
+  
+  
+    
+      width: 3rem;
+      height: 3rem;
+         
+         }
 
 }
 
@@ -512,8 +574,40 @@ margin: 0 1rem;
 
   letter-spacing:1px ;
   margin-bottom: .5rem;
+
+
+  @media only screen and (max-width:896px){ 
+
+  
+   font-size: 1rem;
+
+       
+       
+       }
+
 }
 
+
+&__p{
+  @media only screen and (max-width:1024px){ 
+
+  
+    font-size: .9rem;
+ 
+        
+        
+        }
+
+  @media only screen and (max-width:768px){ 
+
+  
+    font-size: 1rem;
+ 
+        
+        
+        }
+
+}
 
 }
 

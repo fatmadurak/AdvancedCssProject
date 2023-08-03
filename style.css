@@ -888,6 +888,9 @@ body {
   @media only screen and (max-width: 1024px) {
     .sec-features__p {
       font-size: 1rem; } }
+  @media only screen and (max-width: 540px) {
+    .sec-features__p {
+      font-size: .9rem; } }
   @media only screen and (max-width: 480px) {
     .sec-features__p {
       font-size: .8rem; } }
@@ -900,6 +903,9 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-between; }
+  @media only screen and (max-width: 768px) {
+    .sec-workflow {
+      justify-content: center; } }
   .sec-workflow__top {
     height: 7rem;
     width: 70%;
@@ -908,6 +914,10 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-around; }
+    @media only screen and (max-width: 768px) {
+      .sec-workflow__top {
+        margin-bottom: .5rem;
+        height: 8rem; } }
   .sec-workflow__bottom {
     height: 75%;
     display: flex;
@@ -922,7 +932,16 @@ body {
     align-items: flex-end; }
   .sec-workflow__box {
     width: 70%;
-    height: 10rem; }
+    height: 10rem;
+    background-color: yellow; }
+    @media only screen and (max-width: 1024px) {
+      .sec-workflow__box {
+        width: 95%;
+        height: 7rem; } }
+    @media only screen and (max-width: 768px) {
+      .sec-workflow__box {
+        width: 100%;
+        height: 6rem; } }
   .sec-workflow__line-box {
     flex: 1;
     /*geri kalan boşlukları doldur*/
@@ -959,9 +978,26 @@ body {
     shape-outside: circle(50%);
     float: left;
     margin: 0 1rem; }
+    @media only screen and (max-width: 1024px) {
+      .sec-workflow__icon {
+        width: 5rem;
+        height: 5rem; } }
+    @media only screen and (max-width: 1024px) {
+      .sec-workflow__icon {
+        width: 3rem;
+        height: 3rem; } }
   .sec-workflow__heading {
     letter-spacing: 1px;
     margin-bottom: .5rem; }
+    @media only screen and (max-width: 896px) {
+      .sec-workflow__heading {
+        font-size: 1rem; } }
+  @media only screen and (max-width: 1024px) {
+    .sec-workflow__p {
+      font-size: .9rem; } }
+  @media only screen and (max-width: 768px) {
+    .sec-workflow__p {
+      font-size: 1rem; } }
 
 .sec-counter {
   height: 58rem;
