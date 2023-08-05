@@ -941,7 +941,7 @@ body {
     height: 10rem; }
     @media only screen and (max-width: 768px) {
       .sec-workflow__box {
-        height: 7.7rem; } }
+        margin-top: 2.5rem; } }
   .sec-workflow__line-box {
     flex: 1;
     /*geri kalan boşlukları doldur*/
@@ -956,12 +956,19 @@ body {
     flex-direction: column;
     justify-content: space-around;
     align-items: center; }
+    @media only screen and (max-width: 768px) {
+      .sec-workflow__line {
+        width: 2px; } }
   .sec-workflow__circle {
     display: block;
     width: 1.3rem;
     height: 1.3rem;
     border-radius: 50%;
     background-color: #e3a396; }
+    @media only screen and (max-width: 768px) {
+      .sec-workflow__circle {
+        width: 1rem;
+        height: 1rem; } }
   .sec-workflow__right {
     flex: 0  48%;
     height: 100%;
@@ -983,14 +990,11 @@ body {
         width: 6rem;
         height: 6rem;
         margin: 0; } }
-    @media only screen and (max-width: 1024px) {
-      .sec-workflow__icon {
-        width: 3rem;
-        height: 3rem; } }
     @media only screen and (max-width: 768px) {
       .sec-workflow__icon {
-        width: 2.8rem;
-        height: 2.8rem; } }
+        border: 2px solid #e3a396;
+        width: 5rem;
+        height: 5rem; } }
   .sec-workflow__heading {
     letter-spacing: 1px;
     margin-bottom: .5rem; }

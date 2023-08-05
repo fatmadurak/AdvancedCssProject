@@ -405,11 +405,13 @@ justify-content: space-between;
 @media only screen and (max-width:768px){ 
 
  justify-content: space-around;
-
+ 
 
       
       
       }
+
+    
 
 
 &__top{
@@ -472,10 +474,9 @@ align-items: flex-end;
 
 
   @media only screen and (max-width:768px){ 
+
  
-  
- 
- height: 7.7rem; 
+  margin-top: 2.5rem; 
         
         
         }
@@ -503,6 +504,19 @@ flex-direction: column;
 justify-content: space-around;
 align-items:center ;
 
+
+@media only screen and (max-width:768px){ 
+ 
+  
+ 
+  width: 2px;
+
+         
+         
+         }
+   
+
+
 }
 
 &__circle{
@@ -512,6 +526,18 @@ width: 1.3rem;
 height: 1.3rem;
 border-radius: 50%;
 background-color: #e3a396;
+
+
+
+@media only screen and (max-width:768px){ 
+ 
+  
+  width: 1rem;
+  height: 1rem;
+         
+         
+         }
+
 
 }
 
@@ -552,22 +578,14 @@ margin: 0 1rem;
      
      }
 
-     @media only screen and (max-width:1024px){
-
-  
-  
-    
-      width: 3rem;
-      height: 3rem;
-         
-         }
+ 
          @media only screen and (max-width:768px){
 
   
   
-    
-          width: 2.8rem;
-          height: 2.8rem;
+          border:2px solid #e3a396;
+          width: 5rem;
+          height: 5rem;
              
              }
 
