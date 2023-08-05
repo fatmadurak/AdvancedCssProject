@@ -88,7 +88,7 @@ body {
     text-shadow: 2px 2px rgba(0, 0, 0, 0.4); }
   @media only screen and (max-width: 480px) {
     .t2 {
-      font-size: 1.5rem; } }
+      font-size: 1rem; } }
 
 .t3 {
   font-size: 1.2rem;
@@ -99,12 +99,18 @@ body {
   @media only screen and (max-width: 768px) {
     .t4 {
       font-size: .9rem; } }
+  @media only screen and (max-width: 480px) {
+    .t4 {
+      font-size: .8rem; } }
 
 .s1 {
   font-size: .9rem;
   color: #909090;
   line-height: 1.7;
   /* orijinal font genişliğinde küçük*/ }
+  @media only screen and (max-width: 768px) {
+    .s1 {
+      font-size: 1rem; } }
 
 .u-float-right {
   float: right !important; }
@@ -905,7 +911,7 @@ body {
   justify-content: space-between; }
   @media only screen and (max-width: 768px) {
     .sec-workflow {
-      justify-content: center; } }
+      justify-content: space-around; } }
   .sec-workflow__top {
     height: 7rem;
     width: 70%;
@@ -931,17 +937,11 @@ body {
     justify-content: space-between;
     align-items: flex-end; }
   .sec-workflow__box {
-    width: 70%;
-    height: 10rem;
-    background-color: yellow; }
-    @media only screen and (max-width: 1024px) {
-      .sec-workflow__box {
-        width: 95%;
-        height: 7rem; } }
+    width: 100%;
+    height: 10rem; }
     @media only screen and (max-width: 768px) {
       .sec-workflow__box {
-        width: 100%;
-        height: 6rem; } }
+        height: 7.7rem; } }
   .sec-workflow__line-box {
     flex: 1;
     /*geri kalan boşlukları doldur*/
@@ -980,24 +980,31 @@ body {
     margin: 0 1rem; }
     @media only screen and (max-width: 1024px) {
       .sec-workflow__icon {
-        width: 5rem;
-        height: 5rem; } }
+        width: 6rem;
+        height: 6rem;
+        margin: 0; } }
     @media only screen and (max-width: 1024px) {
       .sec-workflow__icon {
         width: 3rem;
         height: 3rem; } }
+    @media only screen and (max-width: 768px) {
+      .sec-workflow__icon {
+        width: 2.8rem;
+        height: 2.8rem; } }
   .sec-workflow__heading {
     letter-spacing: 1px;
     margin-bottom: .5rem; }
-    @media only screen and (max-width: 896px) {
+    @media only screen and (max-width: 768px) {
       .sec-workflow__heading {
         font-size: 1rem; } }
-  @media only screen and (max-width: 1024px) {
-    .sec-workflow__p {
-      font-size: .9rem; } }
-  @media only screen and (max-width: 768px) {
-    .sec-workflow__p {
-      font-size: 1rem; } }
+    @media only screen and (max-width: 480px) {
+      .sec-workflow__heading {
+        font-size: .8rem; } }
+  .sec-workflow__p {
+    width: 100%; }
+    @media only screen and (max-width: 480px) {
+      .sec-workflow__p {
+        font-size: .7rem; } }
 
 .sec-counter {
   height: 58rem;
