@@ -3,7 +3,7 @@
     height: 100%;
     width: 24%;
  
-    border:2px solid $color-white;
+    border:3px solid $color-white;
     box-shadow: 2px 2px 5px rgba($color-black, .4);
     padding: 3rem 3rem;
    
@@ -37,14 +37,24 @@
 
         @media only screen and (max-width:480px){ 
 
-            width: 23%;  
-      
+            width: 45%;  
+            height: 40%;
             border:.4px solid $color-white;
-            padding: .9rem .9rem;
+      
                    
                    
             }
-      
+          
+            @media only screen and (max-width:375px){ 
+
+                justify-content:center;
+                width: 60%;  
+                height: 24%; 
+                border:.2px solid $color-white;
+          
+                       
+                       
+                }
 
 &__icon{
 
@@ -60,6 +70,13 @@ fill:$color-white;
            
            
     }
+    @media only screen and (max-width:375px){ 
+
+        width:1.7rem;
+        height: 1.7rem;
+               
+               
+        }
 
 }
 &__num{
@@ -78,6 +95,14 @@ letter-spacing: -2px;
            
     }
 
+    
+@media only screen and (max-width:375px){ 
+
+ 
+    font-size: 1.8rem;  
+         
+   margin: 1rem 0;
+    }
 }
 
 &__name{
@@ -89,17 +114,26 @@ letter-spacing: -2px;
      text-align: center;
 
 
+     @media only screen and (max-width:1200px){ 
+
+        white-space: nowrap; 
+
+       
+         }
+
 @media only screen and (max-width:768px){ 
 
    width: 100%;
    letter-spacing: 0;
-   font-weight: 400;     
+   font-weight: 400;  
+    
     }
 
     @media only screen and (max-width:480px){ 
 
  
-        font-weight: 200;     
+        font-weight: 200; 
+       
          }
 
   

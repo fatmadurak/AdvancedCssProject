@@ -650,8 +650,42 @@ margin: 0 1rem;
   align-items: space-around;
 
 
+  @media only screen and (max-width:1024px){ 
 
 
+    padding: 3rem 2rem; 
+   
+         
+         
+  }
+
+  @media only screen and (max-width:768px){ 
+
+  
+      padding: 3rem 0; 
+      background-image:linear-gradient(to bottom,rgba(#e3a396,.6),rgba(#e3a396,.5)), url("../../imgs/counter-bg-1000.jpg");
+     
+           
+           
+    }
+
+    @media only screen and (max-width:480px){ 
+
+  
+      padding: 3rem 0; 
+      background-image:linear-gradient(to bottom,rgba(#e3a396,.6),rgba(#e3a396,.5)), url("../../imgs/counter-bg-700.jpg");
+     
+           
+           
+    }
+    @media only screen and (max-width:375px){ 
+
+  
+      height: 100rem;
+     
+           
+           
+    }
 
 
 &__container{
@@ -670,6 +704,15 @@ margin: 0 1rem;
 
 
     width: 100%;
+   
+         
+         
+  }
+
+  @media only screen and (max-width:480px){ 
+
+
+   height: 100%;
    
          
          
@@ -698,6 +741,16 @@ width: 100%;
        
 }
 
+@media only screen and (max-width:768px){ 
+
+
+  width: 95%;
+  
+   
+         
+         
+  }
+
 
 
 
@@ -717,12 +770,31 @@ align-items: center;
 @media only screen and (max-width:768px){ 
 
 
-width: 100%;
+width: 90%;
 height: 25%;
  
        
        
 }
+
+@media only screen and (max-width:480px){ 
+
+  height: 70%;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap; 
+         
+         
+  }
+
+
+  @media only screen and (max-width:375x){ 
+
+   flex-wrap: nowrap;
+   flex-direction: row; 
+    height: 150%;       
+           
+    }
 
 }
 
@@ -748,6 +820,36 @@ justify-content: space-between;
 align-items:center ;
  
 
+
+
+@media only screen and (max-width:1024px){ 
+
+
+  padding: 4rem 1rem 2rem;
+ 
+       
+       
+}
+
+
+@media only screen and (max-width:768px){ 
+
+
+  height: 90rem;   
+
+       
+       
+}
+
+@media only screen and (max-width:480px){ 
+
+
+  height: 100rem;   
+
+       
+       
+}
+
 &__cards{
 
 width: 100%;
@@ -758,7 +860,23 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 
+@media only screen and (max-width:768px){ 
 
+
+  flex: 0 95%;
+  flex-wrap: wrap;
+  justify-content: space-around; 
+       
+}
+
+@media only screen and (max-width:480px){ 
+
+  flex: 0 150%;
+ 
+   flex-wrap: nowrap;
+   flex-direction: column;
+   margin-top: .8rem;
+}
 
 }
 
