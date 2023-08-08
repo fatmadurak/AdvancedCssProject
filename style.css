@@ -91,7 +91,7 @@ body {
       font-size: 1.9rem; } }
   @media only screen and (max-width: 480px) {
     .t2 {
-      font-size: 1rem; } }
+      font-size: 1.5rem; } }
 
 .t3 {
   font-size: 1.2rem;
@@ -107,7 +107,7 @@ body {
       font-size: 1.2rem; } }
   @media only screen and (max-width: 480px) {
     .t4 {
-      font-size: .8rem; } }
+      font-size: 1rem; } }
 
 .s1 {
   font-size: .9rem;
@@ -360,8 +360,8 @@ body {
         margin-bottom: 0; } }
 
 .counter {
-  height: 20rem;
-  width: 22%;
+  height: 100%;
+  width: 24%;
   border: 2px solid #fff;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
   padding: 3rem 3rem;
@@ -369,21 +369,53 @@ body {
   flex-direction: column;
   justify-content: space-around;
   align-items: center; }
+  @media only screen and (max-width: 1024px) {
+    .counter {
+      height: 100%;
+      width: 20%;
+      border: 1px solid #fff;
+      padding: 2rem 2rem; } }
+  @media only screen and (max-width: 768px) {
+    .counter {
+      width: 22%;
+      border: 0.5px solid #fff;
+      padding: 0; } }
+  @media only screen and (max-width: 480px) {
+    .counter {
+      width: 23%;
+      border: 0.4px solid #fff;
+      padding: .9rem .9rem; } }
   .counter__icon {
     width: 3rem;
     height: 3rem;
     fill: #fff; }
+    @media only screen and (max-width: 768px) {
+      .counter__icon {
+        width: 2rem;
+        height: 2rem; } }
   .counter__num {
     font-family: 'Nunito,san-serif';
     font-size: 2.5rem;
     font-weight: 200;
     color: #fff;
     letter-spacing: -2px; }
+    @media only screen and (max-width: 768px) {
+      .counter__num {
+        font-size: 2rem; } }
   .counter__name {
     font-family: 'Nunito,san-serif';
     font-weight: 800;
     letter-spacing: 1px;
-    color: #fff; }
+    color: #fff;
+    text-align: center; }
+    @media only screen and (max-width: 768px) {
+      .counter__name {
+        width: 100%;
+        letter-spacing: 0;
+        font-weight: 400; } }
+    @media only screen and (max-width: 480px) {
+      .counter__name {
+        font-weight: 200; } }
 
 .form {
   width: 100%;
@@ -1025,23 +1057,37 @@ body {
   justify-content: center;
   align-items: space-around; }
   .sec-counter__container {
-    width: 80%;
+    width: 90%;
     height: 90%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center; }
+    @media only screen and (max-width: 768px) {
+      .sec-counter__container {
+        width: 100%; } }
   .sec-counter__top {
-    width: 85%;
+    width: 95%;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center; }
+    @media only screen and (max-width: 768px) {
+      .sec-counter__top {
+        width: 100%; } }
   .sec-counter__bottom {
     width: 100%;
+    height: 40%;
     display: flex;
     justify-content: space-between;
     align-items: center; }
+    @media only screen and (max-width: 768px) {
+      .sec-counter__bottom {
+        width: 100%;
+        height: 25%; } }
+  .sec-counter__p {
+    text-align: justify;
+    width: 100%; }
 
 .sec-card {
   height: 60rem;
