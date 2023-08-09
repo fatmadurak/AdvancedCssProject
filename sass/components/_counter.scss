@@ -81,7 +81,7 @@ fill:$color-white;
 }
 &__num{
 
-font-family:'Nunito,san-serif';
+font-family: $font-secondary;
 font-size: 2.5rem;
 font-weight: 200;
 color:$color-white;
@@ -107,7 +107,7 @@ letter-spacing: -2px;
 
 &__name{
 
-    font-family:'Nunito,san-serif';
+    font-family: $font-secondary;
     font-weight: 800;
     letter-spacing: 1px;
     color:$color-white;   

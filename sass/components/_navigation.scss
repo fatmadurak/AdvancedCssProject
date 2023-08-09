@@ -34,6 +34,7 @@
 
     @media only screen and (max-width: 768px) {
       visibility: visible;
+      cursor:pointer;
     }
 
   }
@@ -86,6 +87,8 @@
       display: flex;
       justify-content: space-around;
     }
+
+
 
     &__link {
       position: relative;
