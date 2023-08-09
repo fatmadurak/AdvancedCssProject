@@ -896,6 +896,27 @@ align-items: center;
   justify-content: center;
   align-items: center;
   
+
+  @media only screen and (max-width:768px){ 
+
+  
+   
+  
+    background-image:linear-gradient(to bottom,rgba($color-white,.6),rgba($color-white,.5)), url(../imgs/sec-idea-bg-1000.jpg);
+         
+  }
+
+
+  
+  @media only screen and (max-width:480px){ 
+
+  
+    background-image:linear-gradient(to bottom,rgba($color-white,.6),rgba($color-white,.5)), url(../imgs/sec-idea-bg-700.jpg); 
+  
+
+         
+  }
+
   &__text{
 
  font-family: 'Nunito,san-serif';
@@ -904,6 +925,36 @@ align-items: center;
  color:$color-white;
  letter-spacing: 2px;
 
+
+
+ @media only screen and (max-width:768px){ 
+
+  
+  font-size: 2.5rem;
+
+       
+       
+}
+
+@media only screen and (max-width:480px){ 
+
+
+  font-size: 2rem;
+
+       
+       
+}
+
+@media only screen and (max-width:375px){ 
+
+
+  font-size: 1.5rem;
+
+       
+       
+}
+
+
   }
 
 
@@ -911,18 +962,40 @@ align-items: center;
 
 .sec-comment{
 
-height: 50rem;
+height: 60rem;
 padding: 4rem 3rem;
 background-color:rgba( #b4bbbd,0.7 );
 
 display: flex;
 flex-direction: column;
-justify-content: space-between;
+justify-content: center;
 align-items:center ;
+
+
+@media only screen and (max-width:768px){ 
+
+  height: 70rem;
+  padding: 3rem 2rem;
+       
+}
+
+
+@media only screen and (max-width:768px){ 
+
+  height: 80rem;
+  padding: 2rem 1rem;
+       
+}
+
+
+
+
+
 
 &__top{
 
-  flex: 0 10%;
+
+  width: 90%;
  
   display: flex;
   justify-content: center;
@@ -932,12 +1005,40 @@ align-items:center ;
 &__bottom{
 
  
-flex: 0 90%;
-width: 70%;
+flex: 0 70%;
+width: 100%;
+margin-top: 5rem;
 
 display: flex;
-justify-content: space-around;
-align-items: center;
+justify-content: space-between;
+align-items: flex-start;
+
+
+@media only screen and (max-width:768px){ 
+
+  margin-top: 3rem;
+   height: 200%; 
+   width: 80%;
+  flex-wrap: wrap;  
+  justify-content: space-around;
+
+       
+}
+
+@media only screen and (max-width:480px){ 
+
+  margin-top: 2rem;
+   height: 100%; 
+   width: 90%;
+  
+
+  justify-content: space-around;
+  align-items: center;
+       
+}
+
+
+
 }
 
  
