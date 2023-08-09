@@ -19,8 +19,8 @@ position: relative;
  @media only screen and (max-width:480px){ 
 
     width: 80%; 
-    height: 25%; 
-    margin-top: .5rem; 
+    height: 20%;  
+
         
  }
 
@@ -33,12 +33,12 @@ box-shadow: -4px 3px 4px 3px rgba($color-black,.3);
 
 position: absolute;
 right: 5%;
-top:-7%;
+top:-5%;
 z-index: 10;
 
 @media only screen and (max-width:768px){ 
 
-
+   top:-1%;
 
     width: 4rem; 
  
@@ -47,7 +47,7 @@ z-index: 10;
 
  @media only screen and (max-width:480px){ 
 
-
+   top:-3%;
     width: 3.8rem; 
 
 
@@ -157,7 +157,7 @@ text-align: right;
  
         
  }
-
+ 
 
 }
 
@@ -167,5 +167,9 @@ text-align: right;
 
     align-self: flex-end;
 }
+
+
+ 
+
 
 }

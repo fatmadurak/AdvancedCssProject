@@ -320,21 +320,22 @@ body {
   @media only screen and (max-width: 480px) {
     .comment {
       width: 80%;
-      height: 25%;
-      margin-top: .5rem; } }
+      height: 20%; } }
   .comment__img {
     width: 5rem;
     border-radius: 50%;
     box-shadow: -4px 3px 4px 3px rgba(0, 0, 0, 0.3);
     position: absolute;
     right: 5%;
-    top: -7%;
+    top: -5%;
     z-index: 10; }
     @media only screen and (max-width: 768px) {
       .comment__img {
+        top: -1%;
         width: 4rem; } }
     @media only screen and (max-width: 480px) {
       .comment__img {
+        top: -3%;
         width: 3.8rem; } }
   .comment__shadow {
     height: 100%;
@@ -1288,18 +1289,29 @@ body {
   align-items: center; }
   @media only screen and (max-width: 768px) {
     .sec-comment {
-      height: 70rem;
+      height: 30rem;
       padding: 3rem 2rem; } }
   @media only screen and (max-width: 768px) {
     .sec-comment {
       height: 80rem;
       padding: 2rem 1rem; } }
+  @media only screen and (max-width: 480px) {
+    .sec-comment {
+      justify-content: space-around;
+      height: 80rem;
+      padding: 2rem; } }
   .sec-comment__top {
     width: 90%;
     display: flex;
     justify-content: center; }
+    @media only screen and (max-width: 768px) {
+      .sec-comment__top {
+        flex: 0 5%; } }
+    @media only screen and (max-width: 480px) {
+      .sec-comment__top {
+        flex: 0 4%; } }
   .sec-comment__bottom {
-    flex: 0 70%;
+    flex: 0 95%;
     width: 100%;
     margin-top: 5rem;
     display: flex;
@@ -1307,15 +1319,16 @@ body {
     align-items: flex-start; }
     @media only screen and (max-width: 768px) {
       .sec-comment__bottom {
-        margin-top: 3rem;
-        height: 200%;
+        margin-top: 0;
+        flex: 0 80%;
         width: 80%;
         flex-wrap: wrap;
         justify-content: space-around; } }
     @media only screen and (max-width: 480px) {
       .sec-comment__bottom {
-        margin-top: 2rem;
-        height: 100%;
+        margin-top: 0;
+        height: 90%;
         width: 90%;
-        justify-content: space-around;
+        flex: 1;
+        justify-content: center;
         align-items: center; } }
