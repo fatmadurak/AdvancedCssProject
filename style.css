@@ -1172,6 +1172,10 @@ body {
         border: 2px solid #e3a396;
         width: 5rem;
         height: 5rem; } }
+    @media only screen and (max-width: 480px) {
+      .sec-workflow__icon {
+        width: 4rem;
+        height: 4rem; } }
   .sec-workflow__heading {
     letter-spacing: 1px;
     margin-bottom: .5rem; }
