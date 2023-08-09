@@ -9,7 +9,7 @@
 
      height: 80%;
   
-    
+
      
      }
 
@@ -17,10 +17,27 @@
      @media only screen and (max-width:480px){
 
         height: 85%;
-     
+
        
         
         }
+
+
+        &--vertical{
+
+         @media only screen and (max-width:768px){
+   
+            height: 100%;
+         
+       
+            
+            }
+   
+   
+      } 
+        
+
+
     &__list{
 
   height:100%;
@@ -31,6 +48,7 @@
  
    display: flex; 
    align-items: center;
+  
 
 
     
@@ -48,6 +66,7 @@
     flex-wrap: nowrap;
     flex-direction: column;
     justify-content: space-between;
+
      
      }
 
@@ -59,6 +78,15 @@
 
   flex-direction: column;
   justify-content: space-around; 
+
+
+  @media only screen and (max-width:768px){
+
+   flex-wrap: nowrap;
+   justify-content: space-between;
+ 
+
+    }
   
 
 

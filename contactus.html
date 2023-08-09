@@ -13,66 +13,96 @@
 
     <div class="container-contactus ">
 
-        <header class="header">
+      <header class="header">
 
-            <img src="imgs/logo-big.png" alt="logo" class="header__logo">
+        <img  srcset="imgs/logo-big.png 205w, imgs/logo-small.png 180w"  
+        sizes="(min-width:1024px) 205px,180px"
+        src="imgs/logo-big.png" alt="logo" class="header__logo"
         
-            <div class="navigation">
-                <nav class="navigation__nav">
-          
-                     <ul class="navigation__list">
-                        <li class="navigation__item"> <a href="" class="navigation__link">Anasayfa</a></li>
-                        <li class="navigation__item"> <a href="" class="navigation__link">Hakkımızda</a></li>
-                        <li class="navigation__item"> <a href="" class="navigation__link">Hizmetlerimiz</a></li>
-                        <li  class="navigation__item"> <a href="" class="navigation__link">Referanslarımız</a></li>
-                        <li class="navigation__item"> <a href="" class="navigation__link">Blog</a></li>
-                        <li class="navigation__item"> <a href="" class="navigation__link">İletişim</a></li>
-                     </ul>
+        >
+    
+        <div class="navigation">
+    
         
-                </nav>
-        
-                <button class="button"><span>login</span><span>login</span></button>    <!--component -->
-        
-            </div>
-        
-          <div class="header__social-nav">
-            <nav class="social-nav" >
-                <ul class="social-nav__list">
-                   
-                    <li class="social-nav__item">
-                       <a class="social-nav__link" >
-                        <svg class="social-nav__icon"> <use xlink:href="imgs/sprite.svg#twitter"> </use></svg>
-                       </a>
-                      </li>
-                    <li class="social-nav__item"> 
-                      <a  class="social-nav__link">
-                        <svg class="social-nav__icon"> <use xlink:href="imgs/sprite.svg#facebook"> </use></svg>
-                      </a>
-                    </li>
-                    <li class="social-nav__item"> 
-                      <a  class="social-nav__link">
-                        <svg class="social-nav__icon"> <use xlink:href="imgs/sprite.svg#instagram"> </use></svg>
-                      </a>
-                    </li>
-                    <li class="social-nav__item">
-                       <a  class="social-nav__link">
-                        <svg class="social-nav__icon"> <use xlink:href="imgs/sprite.svg#linkedin"> </use></svg>
-                      </a>
-                      </li>
-                      <li class="social-nav__item"> 
-                    
-                        <a  class="social-nav__link">
-                          <svg class="social-nav__icon"> <use xlink:href="imgs/sprite.svg#google-plus"> </use></svg>
-                        </a>
-                      
-                      </li>
-                   
+          <input type="checkbox" class="navigation__checkbox" id="navigation__checkbox" placeholder="efse">
+          <label for="navigation__checkbox" class="navigation__button">
+              <span class="navigation__line"></span>
+          </label>
+    
+            <nav class="nav-top">
+      
+                 <ul class="nav-top__list">
+                    <li class="nav-top__item"> <a href="" class="nav-top__link">Anasayfa</a></li>
+                    <li class="nav-top__item"> <a href="" class="nav-top__link">Hakkımızda</a></li>
+                    <li class="nav-top__item"> <a href="" class="nav-top__link">Hizmetlerimiz</a></li>
+                    <li  class="nav-top__item"> <a href="" class="nav-top__link">Referanslarımız</a></li>
+                    <li class="nav-top__item"> <a href="" class="nav-top__link">Blog</a></li>
+                    <li class="nav-top__item"> <a href="" class="nav-top__link">İletişim</a></li>
                  </ul>
-        
+    
+                 <button class="button"><span>login</span><span>login</span></button> 
             </nav>
-          </div>
-        
-            </header>
+    
+              <!--component -->
+    
+    
+    
+            <nav class="nav-bottom">
+      
+              <ul class="nav-bottom__list">
+                 <li class="nav-bottom__item"> <a href="" class="nav-bottom__link">Anasayfa</a></li>
+                 <li class="nav-bottom__item"> <a href="" class="nav-bottom__link">Hakkımızda</a></li>
+                 <li class="nav-bottom__item"> <a href="" class="nav-bottom__link">Hizmetlerimiz</a></li>
+                 <li  class="nav-bottom__item"> <a href="" class="nav-bottom__link">Referanslarımız</a></li>
+                 <li class="nav-bottom__item"> <a href="" class="nav-bottom__link">Blog</a></li>
+                 <li class="nav-bottom__item"> <a href="" class="nav-bottom__link">İletişim</a></li>
+              </ul>
+    
+              <button class="button button--middle"><span>login</span><span>login</span></button>
+         </nav>
+    
+     
+    
+        </div>
+    
+      <div class="header__social-nav">
+        <nav class="social-nav" >
+            <ul class="social-nav__list">
+               
+                <li class="social-nav__item">
+                   <a class="social-nav__link" >
+                    <svg class="social-nav__icon"> <use xlink:href="imgs/sprite.svg#twitter"> </use></svg>
+                   </a>
+                  </li>
+                <li class="social-nav__item"> 
+                  <a  class="social-nav__link">
+                    <svg class="social-nav__icon"> <use xlink:href="imgs/sprite.svg#facebook"> </use></svg>
+                  </a>
+                </li>
+                <li class="social-nav__item"> 
+                  <a  class="social-nav__link">
+                    <svg class="social-nav__icon"> <use xlink:href="imgs/sprite.svg#instagram"> </use></svg>
+                  </a>
+                </li>
+                <li class="social-nav__item">
+                   <a  class="social-nav__link">
+                    <svg class="social-nav__icon"> <use xlink:href="imgs/sprite.svg#linkedin"> </use></svg>
+                  </a>
+                  </li>
+                  <li class="social-nav__item"> 
+                
+                    <a  class="social-nav__link">
+                      <svg class="social-nav__icon"> <use xlink:href="imgs/sprite.svg#google-plus"> </use></svg>
+                    </a>
+                  
+                  </li>
+               
+             </ul>
+    
+        </nav>
+      </div>
+    
+        </header>
 
        <div class="contactus">
 
@@ -95,7 +125,7 @@
 
         <div class="contactus__right">
 
-            <div class="contact-info ">
+            <div class="contact-info contact-info--vertical ">
 
                 <ul class="contact-info__list  contact-info__list--vertical">
                   <li class="contact-info__item">

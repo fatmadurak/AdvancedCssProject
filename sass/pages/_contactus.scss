@@ -22,6 +22,32 @@ align-items: center;
 
 
 
+@media only screen and (max-width:768px){
+
+
+    width: 100%;
+    padding: 0 1rem;
+  
+ 
+     }
+
+
+
+     
+@media only screen and (max-width:480px){
+
+    height: 65rem;
+    flex-direction: column;
+    justify-content: space-between;
+ 
+     }
+
+     @media only screen and (max-width:375px){
+
+       padding: 0;
+     
+         }
+
 
 &__left{
 
@@ -34,6 +60,17 @@ flex-direction: column;
 justify-content: space-between;
 align-items: center;
 
+
+
+     
+@media only screen and (max-width:480px){
+
+    flex: 0 50%;
+    width: 100%;
+   margin-top: 2rem;
+ 
+     }
+
 }
 
 &__right{
@@ -42,6 +79,14 @@ flex: 1;
 height: 60%;
 
 background-color: rgba($color-black,.7);
+
+@media only screen and (max-width:480px){
+
+    flex: 0 40%;
+    width: 100%;
+   
+ 
+     }
 
 
 
